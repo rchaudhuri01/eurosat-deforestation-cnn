@@ -15,7 +15,7 @@ A convolutional neural network that looks at a satellite image and tells you wha
 
 Satellites photograph every inch of Earth on a loop, but raw imagery is useless until something can *read* it. This project trains a model to classify 64×64 patches of Sentinel-2 satellite imagery into 10 land-cover types, the foundational step toward automated tasks like deforestation monitoring, urban-growth tracking, and crop mapping.
 
-Instead of training a neural network from scratch (millions of images, days of compute), this uses **transfer learning**: take ResNet50 — a model that already learned to *see* from 14 million ImageNet photos — and re-teach only what it needs to know about land seen from space.
+Instead of training a neural network from scratch (millions of images, days of compute), this uses **transfer learning**: take ResNet50, which is a model that already learned to *see* from 14 million ImageNet photos, and re-teach only what it needs to know about land seen from space.
 
 ---
 
@@ -110,7 +110,7 @@ classes = ['AnnualCrop','Forest','HerbaceousVegetation','Highway','Industrial',
 
 ---
 
-## 🧠 Honest Log
+## Honest Log
 
 The idea started from a tutorial I found online, and I used AI assistance for debugging. But I typed every line by hand, fought my own errors, and made sure I understood what each part does. This is my first end-to-end machine learning project. Every build starts somewhere.
 
@@ -118,7 +118,7 @@ The idea started from a tutorial I found online, and I used AI assistance for de
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 `PyTorch` · `torchvision` · `scikit-learn` · `matplotlib` · `seaborn` · `Google Colab`
 
